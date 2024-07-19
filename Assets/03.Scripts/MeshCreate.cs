@@ -86,7 +86,7 @@ public class MeshCreate : MonoBehaviour
                 pos[i] = new GameObject("Pos"+i);
                 pos[i].transform.parent = this.transform;
                 pos[i].transform.localPosition = origine_mesh.vertices[i];
-                pos[i].AddComponent<CreateGizmo>(); // 기즈모로 클릭 가능하게...
+                pos[i].AddComponent<CreateSphereGizmo>(); // 기즈모로 클릭 가능하게...
             }
         }
         else
@@ -116,7 +116,7 @@ public class MeshCreate : MonoBehaviour
                     pos[i].transform.localPosition = new Vector3(-hsize, -hsize, 0f);
                 }
                 // 각 정점 클릭 가능하도록....
-                pos[i].AddComponent<CreateGizmo>();
+                pos[i].AddComponent<CreateSphereGizmo>();
             }
         }
 
