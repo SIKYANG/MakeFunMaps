@@ -5,7 +5,6 @@ using UnityEngine;
 // Mesh를 그리기위한 컴포넌트
 [RequireComponent(typeof(MeshFilter))]
 [RequireComponent(typeof(MeshRenderer))]
-[RequireComponent(typeof(BoxCollider))]
 public class MeshCreate : MonoBehaviour
 {
     #region 1. 할당된 정보를 바탕으로 메쉬를 그리기위해, 유니티에서 제공하는 컴포넌트
